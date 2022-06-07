@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="D:\web\css\login.css">
+  <title>Đăng Nhập</title>
+  <link rel="shortcut icon" type="image/png" href="file:///D:/web/img/LOGOW.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body >
+<div class="bg-img">
+  <form action="file:///D:/web/h2phim/h2phim.html#" class="container fo" onsubmit="return validateForm()">
+     <h1> <img src="file:///D:/web/img/LOGOW.ico" style="width: 60px; "><b><center>Login</center></b></h1>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required id="username">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required id="pass">
+
+    <button type="submit" class="btn"><center><b>Login</b></center></button>
+  </form>
+  <script type="text/javascript">
+      function validateForm()
+          {       
+            var user="binbeo90@gmail.com";
+            var pass="beohin123";
+            var u= document.getElementById("username").value;
+            var p=document.getElementById("pass").value;
+              if(u==""){
+                alert("Tên đăng nhập không được để trống");
+                return false;
+              }
+              if(p==""){
+                alert("Mật khẩu không được để trống");
+                return false;
+              }
+              if(u==user && p==pass)  return true;
+                alert("Tài khoản hoặc mật khẩu không chính xác!!!")
+                return false;
+          }
+</script>
+</div>
+</body>
+</html>
